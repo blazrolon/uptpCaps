@@ -15,7 +15,11 @@ h = 480
 #Path to the folder where the pictures are saved
 path = "C:\\testAI\\caps\\pictures"
 
-def get_coord(index, hand, results):
+#Flags
+operate = True
+has_5s_left = False
+
+def get_coordinates(index, hand, results):
     output = np.empty((4,2))
 
     for idx, classification in enumerate(results.multi_handedness):
@@ -50,14 +54,10 @@ def get_coord(index, hand, results):
     return output
 
 def take_screenshot():
-    global file_name, crop
     cv2.imwrite(os.path.join(path, file_name),crop)
     print("Saved")
     global operate 
     operate = False
-    
-operate = True
-has_5s_left = False
 
 cap = cv2.VideoCapture(0)
 with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.5) as hands: 
@@ -95,7 +95,7 @@ with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.
 
                 #Get coordinates and draw the frame
                 coord = None
-                coord = get_coord(num, hand, results)
+                coord = get_coordinates(num, hand, results)
                 if coord.all() and len(results.multi_hand_landmarks)>1: 
                     p1 = np.array((coord[0][0], coord[3][1])).astype(int)
                     cv2.circle(image, p1, 5, (0, 255, 255), cv2.FILLED)
@@ -117,13 +117,13 @@ with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.
                     #Save a picture of the frame after 5 seconds of detecting the hands
                     startX = min(p1[0], p3[0]).astype(int) 
                     endX = max(p1[0], p3[0]).astype(int) 
-                    startY = min(p1[1],  p3[1]).astype(int) 
+                    startY = min(p1[1], p3[1]).astype(int) 
                     endY = max(p1[1], p3[1]).astype(int) 
                     
                     crop = frame[startY:endY, startX:endX]
                     
                     num_elements = len([item for item in os.listdir(path) 
-                    if os.path.isfile(os.path.join(path, item))])
+                        if os.path.isfile(os.path.join(path, item))])
                     file_name = str(num_elements).zfill(5)+'.jpg'
 
                     if has_5s_left == False:
