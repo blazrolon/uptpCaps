@@ -19,6 +19,8 @@ path = "C:\\testAI\\caps\\pictures"
 operate = True
 has_5s_left = False
 
+TIMER = 3
+
 def get_coordinates(index, hand, results):
     output = np.empty((4,2))
 
@@ -54,6 +56,15 @@ def get_coordinates(index, hand, results):
     return output
 
 def take_screenshot():
+    prev = time.time()
+    global TIMER
+    while TIMER >= 0:
+        cv2.putText(image, str(TIMER), (20, 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+        cur = time.time()
+        if cur-prev >= 1:
+            prev = cur
+            TIMER = TIMER-1
+ 
     cv2.imwrite(os.path.join(path, file_name),crop)
     print("Saved")
     global operate 
@@ -128,7 +139,7 @@ with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.
 
                     if has_5s_left == False:
                         has_5s_left = True
-                        save_frame = Timer(5, take_screenshot)
+                        save_frame = Timer(TIMER, take_screenshot)
                         save_frame.start()
   
         # Show our image    
