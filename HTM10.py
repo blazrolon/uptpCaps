@@ -1,39 +1,22 @@
 import mediapipe as mp
-import cv2
 import numpy as np
+import cv2
 import os
-
-import threading 
 from threading import Timer
 import time
 
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
 
+#Width and height of the picture
 w = 640
 h = 480
 
-def get_label(index, hand, results):
-    output = None
-    for idx, classification in enumerate(results.multi_handedness):
-        if classification.classification[0].index == index:
-            
-            # Process results
-            label = classification.classification[0].label
-            score = classification.classification[0].score
-            text = '{} {}'.format(label, round(score, 2))
-            
-            # Extract Coordinates
-            coords = tuple(np.multiply(
-                np.array((hand.landmark[mp_hands.HandLandmark.WRIST].x, hand.landmark[mp_hands.HandLandmark.WRIST].y)),
-            [w, h]).astype(int))
-            
-            output = text, coords
-            
-    return output
+#Path to the folder where the pictures are saved
+path = "C:\\testAI\\caps\\pictures"
 
 def get_coord(index, hand, results):
-    output=np.empty((4,2))
+    output = np.empty((4,2))
 
     for idx, classification in enumerate(results.multi_handedness):
         if classification.classification[0].index == index:
@@ -46,39 +29,38 @@ def get_coord(index, hand, results):
                 cL4 = tuple(np.multiply(
                     np.array((hand.landmark[mp_hands.HandLandmark.THUMB_TIP].x, hand.landmark[mp_hands.HandLandmark.THUMB_TIP].y)),
                 [w, h]).astype(int))
-                output[0]=cL4
+                output[0] = cL4
 
                 cL8 = tuple(np.multiply(
                     np.array((hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x, hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y)),
                 [w, h]).astype(int))
-                output[1]=cL8
+                output[1] = cL8
 
             elif label == "Right":
                 cR4 = tuple(np.multiply(
                     np.array((hand.landmark[mp_hands.HandLandmark.THUMB_TIP].x, hand.landmark[mp_hands.HandLandmark.THUMB_TIP].y)),
                 [w, h]).astype(int))
-                output[2]=cR4
+                output[2] = cR4
 
                 cR8 = tuple(np.multiply(
                     np.array((hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x, hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y)),
                 [w, h]).astype(int))            
-                output[3]=cR8
+                output[3] = cR8
 
     return output
 
 def take_screenshot():
     global file_name, crop
-    cv2.imwrite(os.path.join("C:\\testAI\\caps\\pictures3", file_name),crop)
+    cv2.imwrite(os.path.join(path, file_name),crop)
     print("Saved")
     global operate 
     operate = False
     
-
 operate = True
 has_5s_left = False
 
 cap = cv2.VideoCapture(0)
-with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) as hands: 
+with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.5) as hands: 
     while cap.isOpened():
         ret, frame = cap.read()
         
@@ -107,15 +89,14 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) a
         if results.multi_hand_landmarks:
             for num, hand in enumerate(results.multi_hand_landmarks):
                 mp_drawing.draw_landmarks(image, hand, mp_hands.HAND_CONNECTIONS, 
-                                        mp_drawing.DrawingSpec(color=(121, 22, 76), thickness=2, circle_radius=4),
-                                        mp_drawing.DrawingSpec(color=(250, 44, 250), thickness=2, circle_radius=2),
+                                        mp_drawing.DrawingSpec(color = (121, 22, 76), thickness = 2, circle_radius = 4),
+                                        mp_drawing.DrawingSpec(color = (250, 44, 250), thickness = 2, circle_radius = 2),
                                         )
-                
+
+                #Get coordinates and draw the frame
                 coord = None
                 coord = get_coord(num, hand, results)
-                print(coord)
-                if coord.all() and len(results.multi_hand_landmarks)>1:
-                    
+                if coord.all() and len(results.multi_hand_landmarks)>1: 
                     p1 = np.array((coord[0][0], coord[3][1])).astype(int)
                     cv2.circle(image, p1, 5, (0, 255, 255), cv2.FILLED)
                     
@@ -133,23 +114,23 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) a
                     cv2.line(image, p3, p4, (255, 255, 255), 3)
                     cv2.line(image, p4, p1, (255, 255, 255), 3)
                     
+                    #Save a picture of the frame after 5 seconds of detecting the hands
                     startX = min(p1[0], p3[0]).astype(int) 
                     endX = max(p1[0], p3[0]).astype(int) 
-                    startY = min(p1[1], p3[1]).astype(int) 
+                    startY = min(p1[1],  p3[1]).astype(int) 
                     endY = max(p1[1], p3[1]).astype(int) 
                     
+                    crop = frame[startY:endY, startX:endX]
                     
-                    crop = frame[startY:endY,startX:endX]
-                    
-                    num_elements = len([item for item in os.listdir("C:\\testAI\\caps\\pictures3") 
-                    if os.path.isfile(os.path.join("C:\\testAI\\caps\\pictures3", item))])
+                    num_elements = len([item for item in os.listdir(path) 
+                    if os.path.isfile(os.path.join(path, item))])
                     file_name = str(num_elements).zfill(5)+'.jpg'
 
                     if has_5s_left == False:
                         has_5s_left = True
-                        snap = Timer(5, take_screenshot)
-                        snap.start()
-                    
+                        save_frame = Timer(5, take_screenshot)
+                        save_frame.start()
+  
         # Show our image    
         cv2.imshow('Hand Tracking', image)
 
