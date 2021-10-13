@@ -13,7 +13,7 @@ w = 640
 h = 480
 
 #Path to the folder where the pictures are saved
-path = "C:\\testAI\\caps\\pictures"
+path = "./pictures"
 
 #Flags
 operate = True
