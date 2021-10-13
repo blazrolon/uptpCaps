@@ -75,6 +75,10 @@ with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.
     while cap.isOpened():
         ret, frame = cap.read()
         
+        if np.sum(frame) == 0:
+            print("empty frame")
+            exit()s
+
         # BGR 2 RGB
         image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         
