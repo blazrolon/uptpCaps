@@ -33,23 +33,23 @@ def get_coordinates(index, hand, results):
             # Extract Coordinates
             if label == "Left":
                 cL4 = tuple(np.multiply(
-                    np.array((hand.landmark[mp_hands.HandLandmark.THUMB_TIP].x, hand.landmark[mp_hands.HandLandmark.THUMB_TIP].y)),
+                    np.array((hand.landmark[mp_hands.HandLandmark.THUMB_MCP].x, hand.landmark[mp_hands.HandLandmark.THUMB_MCP].y)),
                 [w, h]).astype(int))
                 output[0] = cL4
 
                 cL8 = tuple(np.multiply(
-                    np.array((hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x, hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y)),
+                    np.array((hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].x, hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].y)),
                 [w, h]).astype(int))
                 output[1] = cL8
 
             elif label == "Right":
                 cR4 = tuple(np.multiply(
-                    np.array((hand.landmark[mp_hands.HandLandmark.THUMB_TIP].x, hand.landmark[mp_hands.HandLandmark.THUMB_TIP].y)),
+                    np.array((hand.landmark[mp_hands.HandLandmark.THUMB_MCP].x, hand.landmark[mp_hands.HandLandmark.THUMB_MCP].y)),
                 [w, h]).astype(int))
                 output[2] = cR4
 
                 cR8 = tuple(np.multiply(
-                    np.array((hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x, hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y)),
+                    np.array((hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].x, hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].y)),
                 [w, h]).astype(int))            
                 output[3] = cR8
 
@@ -59,7 +59,7 @@ def take_screenshot():
     prev = time.time()
     global TIMER
     while TIMER >= 0:
-        cv2.putText(image, str(TIMER), (20, 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+        cv2.putText(image, str(TIMER), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
         cur = time.time()
         if cur-prev >= 1:
             prev = cur
@@ -108,17 +108,17 @@ with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.
                 coord = None
                 coord = get_coordinates(num, hand, results)
                 if coord.all() and len(results.multi_hand_landmarks)>1: 
-                    p1 = np.array((coord[0][0], coord[3][1])).astype(int)
-                    cv2.circle(image, p1, 5, (0, 255, 255), cv2.FILLED)
-                    
-                    p2 = np.array((coord[0][0], coord[1][1])).astype(int)
-                    cv2.circle(image, p2, 5, (0, 0, 255), cv2.FILLED)
+                    p1 = np.array((coord[1][0], coord[2][1])).astype(int)
+                    cv2.circle(image, p1, 5, (255, 255, 255), cv2.FILLED)
 
-                    p3 = np.array((coord[2][0], coord[1][1])).astype(int)
-                    cv2.circle(image, p3, 5, (255, 255, 0), cv2.FILLED)
-    
-                    p4 = np.array((coord[2][0], coord[3][1])).astype(int)
-                    cv2.circle(image, p4, 5, (255, 0, 0), cv2.FILLED)
+                    p2 = np.array((coord[1][0], coord[0][1])).astype(int)
+                    cv2.circle(image, p2, 5, (255, 255, 255), cv2.FILLED)
+
+                    p3 = np.array((coord[3][0], coord[0][1])).astype(int)
+                    cv2.circle(image, p3, 5, (255, 255, 255), cv2.FILLED)
+
+                    p4 = np.array((coord[3][0], coord[2][1])).astype(int)
+                    cv2.circle(image, p4, 5, (255, 255, 255), cv2.FILLED)
 
                     cv2.line(image, p1, p2, (255, 255, 255), 3)
                     cv2.line(image, p2, p3, (255, 255, 255), 3)
