@@ -141,10 +141,10 @@ with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.
                         if os.path.isfile(os.path.join(path, item))])
                     file_name = str(num_elements).zfill(5)+'.jpg'
 
-                    # if has_5s_left == False:
-                    #     has_5s_left = True
-                    #     save_frame = Timer(TIMER, take_screenshot)
-                    #     save_frame.start()
+                    if has_5s_left == False:
+                        has_5s_left = True
+                        save_frame = Timer(TIMER, take_screenshot)
+                        save_frame.start()
   
         # Show our image    
         cv2.imshow('Hand Tracking', image)
