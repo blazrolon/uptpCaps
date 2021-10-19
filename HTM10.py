@@ -19,7 +19,8 @@ path = "C:\\testAI\\caps\\pictures"
 operate = True
 has_5s_left = False
 
-TIMER = 3
+#Amount of time until the frame is saved
+countdown_time = 3
 
 def get_coordinates(index, hand, results):
     output = np.empty((4,2))
@@ -56,17 +57,29 @@ def get_coordinates(index, hand, results):
     return output
 
 def take_screenshot():
+    #Countdown
     prev = time.time()
-    global TIMER
-    while TIMER >= 0:
-        cv2.putText(image, str(TIMER), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+    global countdown_time
+    while countdown_time >= 0:
+        cv2.putText(image, str(countdown_time), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
         cur = time.time()
         if cur-prev >= 1:
             prev = cur
-            TIMER = TIMER-1
- 
-    cv2.imwrite(os.path.join(path, file_name),crop)
+            countdown_time = countdown_time-1
+
+    #Take the crop delimited by the fingers
+    crop = frame[startY:endY, (640-endX):(640-startX)]
+
+    #Name the picture as the number of elements in the saving folder
+    num_elements = len([item for item in os.listdir(path) 
+            if os.path.isfile(os.path.join(path, item))])
+    file_name = str(num_elements).zfill(5) + '.jpg'
+
+    #Save the picture
+    cv2.imwrite(os.path.join(path, file_name), crop)
     print("Saved")
+
+    #Terminate the loop to detect the hands
     global operate 
     operate = False
 
@@ -109,41 +122,35 @@ with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.
                 coord = get_coordinates(num, hand, results)
                 if coord.all() and len(results.multi_hand_landmarks)>1: 
                     p1 = np.array((coord[1][0], coord[2][1])).astype(int)
-                    cv2.circle(image, p1, 5, (255, 255, 255), cv2.FILLED)
+                    cv2.circle(image, p1, 5, (0, 255, 255), cv2.FILLED)
 
                     p2 = np.array((coord[1][0], coord[0][1])).astype(int)
-                    cv2.circle(image, p2, 5, (255, 255, 255), cv2.FILLED)
+                    cv2.circle(image, p2, 5, (0, 255, 255), cv2.FILLED)
 
                     p3 = np.array((coord[3][0], coord[0][1])).astype(int)
-                    cv2.circle(image, p3, 5, (255, 255, 255), cv2.FILLED)
+                    cv2.circle(image, p3, 5, (0, 255, 255), cv2.FILLED)
 
                     p4 = np.array((coord[3][0], coord[2][1])).astype(int)
-                    cv2.circle(image, p4, 5, (255, 255, 255), cv2.FILLED)
+                    cv2.circle(image, p4, 5, (0, 255, 255), cv2.FILLED)
 
-                    cv2.line(image, p1, p2, (255, 255, 255), 3)
-                    cv2.line(image, p2, p3, (255, 255, 255), 3)
-                    cv2.line(image, p3, p4, (255, 255, 255), 3)
-                    cv2.line(image, p4, p1, (255, 255, 255), 3)
+                    cv2.line(image, p1, p2, (0, 255, 255), 3)
+                    cv2.line(image, p2, p3, (0, 255, 255), 3)
+                    cv2.line(image, p3, p4, (0, 255, 255), 3)
+                    cv2.line(image, p4, p1, (0, 255, 255), 3)
                     
-                    #Save a picture of the frame after 5 seconds of detecting the hands
                     startX = min(p1[0], p3[0]).astype(int) 
                     endX = max(p1[0], p3[0]).astype(int) 
                     startY = min(p1[1], p3[1]).astype(int) 
-                    endY = max(p1[1], p3[1]).astype(int) 
-                    
-                    crop = frame[startY:endY, startX:endX]
-                    
-                    num_elements = len([item for item in os.listdir(path) 
-                        if os.path.isfile(os.path.join(path, item))])
-                    file_name = str(num_elements).zfill(5)+'.jpg'
+                    endY = max(p1[1], p3[1]).astype(int)
 
+                    #Start countdown to save the picture
                     if has_5s_left == False:
                         has_5s_left = True
-                        save_frame = Timer(TIMER, take_screenshot)
+                        save_frame = Timer(countdown_time, take_screenshot)
                         save_frame.start()
   
-        # Show our image    
-        cv2.imshow('Hand Tracking', image)
+        # Show the image    
+        cv2.imshow("Hand Tracking", image)
 
         if operate == False:
             break
