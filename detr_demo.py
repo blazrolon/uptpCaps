@@ -221,11 +221,11 @@ def plot_results(pil_img, prob, boxes):
         ax.text(xmin, ymin, text, fontsize=15,
                 bbox=dict(facecolor='yellow', alpha=0.5))
     plt.axis('off')
-    plt.show()
-
+    
     dt=datetime.now().strftime("%Y%m%d-%H%M%S")
-    plt.savefig('ouput/'+str(dt)+'.jpg')
-
+    plt.savefig(str('output/'+str(dt)+'.png'))
+    
+    plt.show()
 
 
 plot_results(im, scores, boxes)
