@@ -33,6 +33,9 @@ from getlast import get_last_image
 # Import datetime for naming files
 from datetime import datetime
 
+#import timer to get runtime
+from timer import fromHere, toHere
+
 """## DETR
 Here is a minimal implementation of DETR:
 """
