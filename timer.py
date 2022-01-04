@@ -1,7 +1,7 @@
 from datetime import datetime
 
 def fromHere():
-    dt=datetime.utcnow()
+    return datetime.utcnow()
 
 
 def toHere(dt=datetime.utcnow()):

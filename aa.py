@@ -33,6 +33,12 @@ from getlast import get_last_image
 # Import datetime for naming files
 from datetime import datetime
 
+
+#import timer to get runtime
+from timer import fromHere, toHere
+
+fromHere = fromHere()
+
 """## DETR
 Here is a minimal implementation of DETR:
 """
@@ -225,6 +231,8 @@ def plot_results(pil_img, prob, boxes):
     dt=datetime.now().strftime("%Y%m%d-%H%M%S")
     plt.savefig(str('output/'+str(dt)+'.png'))
     
+    toHere()
+
     plt.show()
 
 
