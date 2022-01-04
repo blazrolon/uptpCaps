@@ -5,10 +5,10 @@ Created on Thu Dec 30 12:20:54 2021
 @author: biabe
 """
 import cv2
-import get_latest
+import getlast
 import matplotlib.pyplot as plt
 
-img=cv2.imread(get_latest.get_last_image(),1)
+img=cv2.imread(getlast.get_last_image(),1)
 sr = cv2.dnn_superres.DnnSuperResImpl_create()
 path = "ESPCN_x3.pb"
 sr.readModel(path)
@@ -27,4 +27,4 @@ plt.subplot(1,3,3)
 # OpenCV upscaled
 plt.imshow(resized[:,:,::-1])
 plt.show()
-cv2.imwrite('result.jpeg',resized)
+cv2.imwrite('output/result.jpeg',resized)
