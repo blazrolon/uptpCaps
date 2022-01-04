@@ -1,2 +1,10 @@
-for i in list(range(2000)):
-    print(i)
+from datetime import datetime
+
+def fromHere():
+    dt=datetime.utcnow()
+
+
+def toHere(dt=datetime.utcnow()):
+
+    _dt=datetime.utcnow()
+    print(_dt-dt)
