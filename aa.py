@@ -211,8 +211,14 @@ url = 'http://images.cocodataset.org/val2017/000000039769.jpg'
 dir = get_last_image()
 im = Image.open(dir)
 
+import subprocess
+
+p=subprocess.Popen('while true; do ps auw; sleep 0.5; done', shell=True)
+
 scores, boxes = detect(im, detr, transform)
 
+p.terminate()
+p.kill()
 """Let's now visualize the model predictions"""
 
 def plot_results(pil_img, prob, boxes):

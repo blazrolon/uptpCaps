@@ -1,0 +1,642 @@
+sudo python3 cam.py ; sudo python3 aa.py [sudo] password for nvidia: 
+Saved
+Escape hit, closing...
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101904 tty2  Sl+  10:54   3:07 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15438  0.0  0.0   9368  3864 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15439  120  5.6 2049792 450612 pts/0  Rl+  12:07   0:06 python3 aa.py
+root     15454  0.0  0.0   1912   484 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15455  0.0  0.0   8832  3256 pts/0    R+   12:07   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101904 tty2  Sl+  10:54   3:07 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15438  0.0  0.0   9368  3864 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15439  133  6.3 2060892 507808 pts/0  Rl+  12:07   0:08 python3 aa.py
+root     15454  1.0  0.0   1912   484 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15460  0.0  0.0   8832  3264 pts/0    R+   12:07   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101904 tty2  Sl+  10:54   3:07 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15438  0.0  0.0   9368  3864 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15439  146  6.5 2080092 526880 pts/0  Rl+  12:07   0:10 python3 aa.py
+root     15454  0.5  0.0   1912   484 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15462  3.0  0.0   8832  3312 pts/0    R+   12:07   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101904 tty2  Sl+  10:54   3:07 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15438  0.0  0.0   9368  3864 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15439  179  6.6 2087292 534564 pts/0  Rl+  12:07   0:12 python3 aa.py
+root     15454  0.5  0.0   1912   484 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15464  0.0  0.0   8832  3256 pts/0    R+   12:07   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101904 tty2  Sl+  10:54   3:07 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15438  0.0  0.0   9368  3864 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15439  186  5.7 2013492 463040 pts/0  Rl+  12:07   0:14 python3 aa.py
+root     15454  0.3  0.0   1912   484 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15466  0.0  0.0   8832  3272 pts/0    R+   12:07   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101904 tty2  Sl+  10:54   3:07 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15438  0.0  0.0   9368  3864 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15439  214  5.7 2341172 464292 pts/0  Sl+  12:07   0:17 python3 aa.py
+root     15454  0.3  0.0   1912  1120 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15468  0.0  0.0   8832  3264 pts/0    R+   12:07   0:00 ps auw
+0:00:06.838542
+nvidia@nvidia-desktop:~/uptp/uptpCaps$ sudo python3 hand_tracking.py ; sudo python3 aa.py 
+[libprotobuf WARNING external/com_google_protobuf/src/google/protobuf/text_format.cc:324] Warning parsing text-format mediapipe.CalculatorGraphConfig: 125:5: text format contains deprecated field "use_gpu"
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20220107 12:07:26.182533 15474 gl_context_egl.cc:163] Successfully initialized EGL. Major : 1 Minor: 5
+I20220107 12:07:26.244311 15485 gl_context.cc:331] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 32.4.4)
+I20220107 12:07:26.244683 15474 gl_context_egl.cc:163] Successfully initialized EGL. Major : 1 Minor: 5
+I20220107 12:07:26.283901 15486 gl_context.cc:331] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 32.4.4)
+W20220107 12:07:26.286967 15485 tflite_model_loader.cc:32] Trying to resolve path manually as GetResourceContents failed: ; Can't find file: mediapipe/modules/palm_detection/palm_detection.tflite
+INFO: Created TensorFlow Lite delegate for GPU.
+W20220107 12:07:26.588039 15485 tflite_model_loader.cc:32] Trying to resolve path manually as GetResourceContents failed: ; Can't find file: mediapipe/modules/hand_landmark/hand_landmark.tflite
+Saved
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:09 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15495  0.0  0.0   9368  3764 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15496  119  5.5 1995112 447664 pts/0  Rl+  12:07   0:05 python3 aa.py
+root     15511  0.0  0.0   1912   456 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15512  0.0  0.0   8832  3224 pts/0    R+   12:07   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:09 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15495  0.0  0.0   9368  3764 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15496  137  5.8 2022868 470252 pts/0  Rl+  12:07   0:08 python3 aa.py
+root     15511  1.0  0.0   1912   456 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15517  2.0  0.0   8832  3264 pts/0    R+   12:07   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:09 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:17 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15495  0.0  0.0   9368  3764 pts/0    S+   12:07   0:00 sudo python3 aa.py
+root     15496  175  5.5 1995076 444132 pts/0  Rl+  12:07   0:10 python3 aa.py
+root     15511  1.0  0.0   1912   456 pts/0    S+   12:07   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15519  0.0  0.0   8832  3256 pts/0    R+   12:07   0:00 ps auw
+0:00:04.705071
+nvidia@nvidia-desktop:~/uptp/uptpCaps$ sudo python3 hand_tracking.py ; sudo python3 aa.py 
+[libprotobuf WARNING external/com_google_protobuf/src/google/protobuf/text_format.cc:324] Warning parsing text-format mediapipe.CalculatorGraphConfig: 125:5: text format contains deprecated field "use_gpu"
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20220107 12:07:55.844964 15524 gl_context_egl.cc:163] Successfully initialized EGL. Major : 1 Minor: 5
+I20220107 12:07:55.908267 15535 gl_context.cc:331] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 32.4.4)
+I20220107 12:07:55.908602 15524 gl_context_egl.cc:163] Successfully initialized EGL. Major : 1 Minor: 5
+I20220107 12:07:55.922798 15536 gl_context.cc:331] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 32.4.4)
+W20220107 12:07:55.925007 15535 tflite_model_loader.cc:32] Trying to resolve path manually as GetResourceContents failed: ; Can't find file: mediapipe/modules/palm_detection/palm_detection.tflite
+INFO: Created TensorFlow Lite delegate for GPU.
+W20220107 12:07:56.216382 15535 tflite_model_loader.cc:32] Trying to resolve path manually as GetResourceContents failed: ; Can't find file: mediapipe/modules/hand_landmark/hand_landmark.tflite
+Saved
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:11 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:18 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15551  0.0  0.0   9368  3724 pts/0    S+   12:08   0:00 sudo python3 aa.py
+root     15552  120  5.6 1992672 450260 pts/0  Rl+  12:08   0:06 python3 aa.py
+root     15567  0.0  0.0   1912   492 pts/0    S+   12:08   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15568  0.0  0.0   8832  3272 pts/0    R+   12:08   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:11 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:18 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15551  0.0  0.0   9368  3724 pts/0    S+   12:08   0:00 sudo python3 aa.py
+root     15552  165  5.8 2019364 470264 pts/0  Rl+  12:08   0:08 python3 aa.py
+root     15567  0.0  0.0   1912   492 pts/0    S+   12:08   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15573  0.0  0.0   8832  3180 pts/0    R+   12:08   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:11 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:18 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15551  0.0  0.0   9368  3724 pts/0    S+   12:08   0:00 sudo python3 aa.py
+root     15552  176  5.5 1994852 447912 pts/0  Rl+  12:08   0:10 python3 aa.py
+root     15567  1.0  0.0   1912   492 pts/0    S+   12:08   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15575  0.0  0.0   8832  3224 pts/0    R+   12:08   0:00 ps auw
+0:00:04.532796
+nvidia@nvidia-desktop:~/uptp/uptpCaps$ sudo python3 hand_tracking.py ; sudo python3 aa.py 
+[libprotobuf WARNING external/com_google_protobuf/src/google/protobuf/text_format.cc:324] Warning parsing text-format mediapipe.CalculatorGraphConfig: 125:5: text format contains deprecated field "use_gpu"
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20220107 12:08:23.649461 15581 gl_context_egl.cc:163] Successfully initialized EGL. Major : 1 Minor: 5
+I20220107 12:08:23.725616 15592 gl_context.cc:331] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 32.4.4)
+I20220107 12:08:23.726047 15581 gl_context_egl.cc:163] Successfully initialized EGL. Major : 1 Minor: 5
+I20220107 12:08:23.764168 15593 gl_context.cc:331] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 32.4.4)
+W20220107 12:08:23.768239 15592 tflite_model_loader.cc:32] Trying to resolve path manually as GetResourceContents failed: ; Can't find file: mediapipe/modules/palm_detection/palm_detection.tflite
+INFO: Created TensorFlow Lite delegate for GPU.
+W20220107 12:08:24.070420 15592 tflite_model_loader.cc:32] Trying to resolve path manually as GetResourceContents failed: ; Can't find file: mediapipe/modules/hand_landmark/hand_landmark.tflite
+Saved
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:13 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:18 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15602  0.0  0.0   9368  3768 pts/0    S+   12:08   0:00 sudo python3 aa.py
+root     15603  119  5.5 1994964 448420 pts/0  Rl+  12:08   0:05 python3 aa.py
+root     15621  0.0  0.0   1912   496 pts/0    S+   12:08   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15622  0.0  0.0   8832  3304 pts/0    R+   12:08   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:13 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:18 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15602  0.0  0.0   9368  3768 pts/0    S+   12:08   0:00 sudo python3 aa.py
+root     15603  165  5.8 2020008 467796 pts/0  Rl+  12:08   0:08 python3 aa.py
+root     15621  0.0  0.0   1912   496 pts/0    S+   12:08   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15627  0.0  0.0   8832  3256 pts/0    R+   12:08   0:00 ps auw
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      5286  0.0  0.0   5560  2084 ttyS0    Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+gdm       5959  0.0  0.0 159884  5528 tty1     Ssl+ 10:53   0:00 /usr/lib/gdm3/gdm-x-session gnome-session --autostart /usr/share/gd
+root      5964  0.0  0.4 25311068 33500 tty1   Sl+  10:53   0:01 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/120/gdm/Xauthor
+gdm       6067  0.0  0.1 402132 12692 tty1     Sl+  10:53   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/
+root      6093  0.0  0.0   5560  2048 ttyGS0   Ss+  10:53   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyGS0 vt220
+gdm       6260  0.1  1.7 3175624 141644 tty1   Sl+  10:53   0:05 /usr/bin/gnome-shell
+gdm       7100  0.0  0.0 307444  7244 tty1     Sl   10:53   0:00 ibus-daemon --xim --panel disable
+gdm       7116  0.0  0.0 232840  5432 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-dconf
+gdm       7119  0.0  0.2 183312 19676 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm       7212  0.0  0.2 332072 23444 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm       7217  0.0  0.0 232440  5704 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm       7223  0.0  0.2 182948 19352 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm       7224  0.0  0.2 489488 21520 tty1     Sl+  10:53   0:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm       7228  0.0  0.1 214752 12840 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm       7229  0.0  0.0 232904  4432 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm       7232  0.0  0.2 332044 22456 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm       7235  0.0  0.2 598224 22240 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm       7237  0.0  0.0 158132  4060 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm       7240  0.0  0.2 332684 20892 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm       7255  0.0  0.1 169420  9932 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm       7258  0.0  0.0 158148  4112 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm       7259  0.0  0.0 231868  5372 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm       7265  0.0  0.0 239004  7908 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm       7266  0.0  0.0 310876  7184 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm       7270  0.0  0.0 239588  7620 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm       7280  0.0  0.2 257736 20384 tty1     Sl+  10:53   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm       7348  0.0  0.0 158960  6144 tty1     Sl   10:53   0:00 /usr/lib/ibus/ibus-engine-simple
+nvidia    7891  0.0  0.0 159884  5608 tty2     Ssl+ 10:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script /usr/lib/gnome-session/run
+root      7893  4.3  1.2 25455520 101916 tty2  Sl+  10:54   3:13 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xautho
+nvidia    7907  0.0  0.0   2272  1312 tty2     S+   10:54   0:00 /bin/sh /usr/lib/gnome-session/run-systemd-session unity-session.ta
+nvidia    8099  0.0  0.0  12940  5036 tty2     S+   10:54   0:00 systemctl --user start --wait unity-session.target
+nvidia    8651  0.0  0.0   9300  5856 pts/0    Ss   10:55   0:00 bash
+nvidia    8742  0.0  0.0   9036  5556 pts/1    Ss   10:55   0:02 bash
+nvidia   14847  1.3  0.0   9652  3852 pts/1    S+   11:45   0:18 top -i
+nvidia   15185  0.0  0.0   9036  5536 pts/2    Ss+  11:52   0:00 bash
+root     15602  0.0  0.0   9368  3768 pts/0    S+   12:08   0:00 sudo python3 aa.py
+root     15603  176  5.5 1995044 444712 pts/0  Rl+  12:08   0:10 python3 aa.py
+root     15621  1.0  0.0   1912   496 pts/0    S+   12:08   0:00 /bin/sh -c while true; do ps auw; sleep 0.5; done
+root     15629  0.0  0.0   8832  3260 pts/0    R+   12:08   0:00 ps auw
+0:00:04.524759
+nvidia@nvidia-desktop:~/uptp/uptpCaps$ 
+
