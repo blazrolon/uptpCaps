@@ -16,7 +16,7 @@ Let's start with some common imports.
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-from PIL import Image
+import Image
 import requests
 import matplotlib.pyplot as plt
 # %config InlineBackend.figure_format = 'retina'
@@ -222,11 +222,11 @@ p.kill()
 """Let's now visualize the model predictions"""
 
 def plot_results(pil_img, prob, boxes):
-    plt.figure(figsize=(15,10))
+    plt.figure(figsize=(16,10))
     plt.imshow(pil_img)
     ax = plt.gca()
     for p, (xmin, ymin, xmax, ymax), c in zip(prob, boxes.tolist(), COLORS * 100):
-        ax.add_patch(plt.Rectangle((xmin+5, ymin+3), xmax - xmin, ymax - ymin,
+        ax.add_patch(plt.Rectangle((xmin, ymin), xmax - xmin, ymax - ymin,
                                    fill=False, color=c, linewidth=3))
         cl = p.argmax()
         text = f'{CLASSES[cl]}: {p[cl]:0.2f}'
